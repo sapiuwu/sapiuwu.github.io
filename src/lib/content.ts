@@ -167,7 +167,7 @@ export const projects: Record<"engineer" | "analyst", Project[]> = {
         en: "Full-stack marketplace with payment gateway, inventory management, and real-time analytics dashboard.",
       },
       tags: ["Next.js", "PostgreSQL", "Stripe", "Redis"],
-      link: "#",
+      link: "https://github.com/sapiuwu",
     },
     {
       title: { id: "Aplikasi Chat Real-time", en: "Real-time Chat App" },
@@ -176,7 +176,7 @@ export const projects: Record<"engineer" | "analyst", Project[]> = {
         en: "Messaging app with WebSocket, end-to-end encryption, and multi-device support.",
       },
       tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-      link: "#",
+      link: "https://github.com/sapiuwu",
     },
     {
       title: { id: "Dashboard DevOps", en: "DevOps Dashboard" },
@@ -185,7 +185,7 @@ export const projects: Record<"engineer" | "analyst", Project[]> = {
         en: "Deployment pipeline monitoring with metric visualization, centralized logs, and automated alerts.",
       },
       tags: ["Next.js", "Docker", "Grafana", "GitHub Actions"],
-      link: "#",
+      link: "https://github.com/sapiuwu",
     },
     {
       title: { id: "API Geolokasi", en: "Geolocation API" },
@@ -194,7 +194,7 @@ export const projects: Record<"engineer" | "analyst", Project[]> = {
         en: "REST API for location search with aggressive caching and sub-100ms response time.",
       },
       tags: ["Node.js", "PostGIS", "Redis", "AWS"],
-      link: "#",
+      link: "https://github.com/sapiuwu",
     },
   ],
   analyst: [
@@ -205,7 +205,7 @@ export const projects: Record<"engineer" | "analyst", Project[]> = {
         en: "In-depth analysis of 10 Indonesian tech issuers with DCF models and portfolio allocation recommendations.",
       },
       tags: ["DCF", "Equity Research", "Python"],
-      link: "#",
+      link: "https://github.com/sapiuwu",
     },
     {
       title: { id: "Model Valuasi Consumer", en: "Consumer Valuation Model" },
@@ -214,7 +214,7 @@ export const projects: Record<"engineer" | "analyst", Project[]> = {
         en: "Integrated valuation model for the consumer sector with bull/base/bear scenarios and variable sensitivity.",
       },
       tags: ["Financial Modeling", "Excel", "Scenario Analysis"],
-      link: "#",
+      link: "https://github.com/sapiuwu",
     },
     {
       title: { id: "Strategi Rotasi Sektor", en: "Sector Rotation Strategy" },
@@ -223,7 +223,7 @@ export const projects: Record<"engineer" | "analyst", Project[]> = {
         en: "Economy-cycle-based strategy for sector rotation, backtested on 10 years of historical data.",
       },
       tags: ["Quantitative", "Backtesting", "Python"],
-      link: "#",
+      link: "https://github.com/sapiuwu",
     },
     {
       title: { id: "Laporan Kinerja Portofolio", en: "Portfolio Performance Report" },
@@ -232,7 +232,7 @@ export const projects: Record<"engineer" | "analyst", Project[]> = {
         en: "Monthly reporting framework with Sharpe, drawdown metrics, and index benchmarking.",
       },
       tags: ["Risk Metrics", "Reporting", "Bloomberg"],
-      link: "#",
+      link: "https://github.com/sapiuwu",
     },
   ],
 };
