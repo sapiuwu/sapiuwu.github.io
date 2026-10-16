@@ -7,7 +7,7 @@ export default function Footer({ year }: { year: number }) {
   const { side, lang } = useApp();
 
   return (
-    <footer className="border-t border-line">
+    <footer className="relative z-10 border-t border-line">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 py-8 sm:flex-row">
         <div className="text-sm text-fg-muted">
           © {year} {NAME} — {t(footer.rights, lang)}

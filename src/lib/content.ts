@@ -237,6 +237,41 @@ export const projects: Record<"engineer" | "analyst", Project[]> = {
   ],
 };
 
+export const lore: Record<
+  "engineer" | "analyst",
+  {
+    chapter: Localized;
+    title: Localized;
+    system: Localized;
+    story: Localized;
+  }
+> = {
+  engineer: {
+    chapter: { id: "BAB 01", en: "CHAPTER 01" },
+    title: { id: "Sang Arsitek Kode", en: "The Code Architect" },
+    system: {
+      id: "==> MEMBANGUN DUNIA DARI ANGKA :: BEGIN",
+      en: "==> BUILDING WORLDS FROM NUMBERS :: BEGIN",
+    },
+    story: {
+      id: "Jauh di dalam inti mesin, kode bukan sekadar teks — ia adalah bahasa yang menghidupkan dunia. Sejak baris pertama, aku belajar membaca arsitektur yang tak terlihat, menyusun realitas dari nol: satu logika, satu abstraksi, satu denyut kompilasi pada satu waktu.",
+      en: "Deep inside the machine core, code is not just text — it is the language that brings worlds to life. Since the first line, I learned to read the invisible architecture, assembling reality from nothing: one logic, one abstraction, one compilation pulse at a time.",
+    },
+  },
+  analyst: {
+    chapter: { id: "BAB 01", en: "CHAPTER 01" },
+    title: { id: "Sang Pembaca Pasar", en: "The Market Reader" },
+    system: {
+      id: "==> MEMBACA KEBENARAN DARI PASAR :: LIVE",
+      en: "==> READING TRUTH FROM THE MARKET :: LIVE",
+    },
+    story: {
+      id: "Setiap candle adalah nafas para investor; setiap grafik menyimpan cerita optimisme dan ketakutan. Di tengah hiruk-pikuk angka, aku belajar mendengar denyut pasar — membaca sinyal di balik kebisingan dan menulis narasi pertumbuhan dari data yang tampak acak.",
+      en: "Every candle is a breath of investors; every chart holds stories of optimism and fear. Amid the noise of numbers, I learned to hear the market's pulse — reading the signal behind the static and writing a story of growth from seemingly random data.",
+    },
+  },
+};
+
 export const experience: Record<"engineer" | "analyst", Experience[]> = {
   engineer: [
     {

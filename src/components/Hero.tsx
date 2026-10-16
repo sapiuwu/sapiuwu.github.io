@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useApp } from "@/components/providers";
+import LoreCard from "@/components/lore/LoreCard";
 import SideToggle from "@/components/SideToggle";
 import { hero, t } from "@/lib/content";
 
@@ -18,13 +19,6 @@ export default function Hero() {
 
   return (
     <section id="top" className="relative overflow-hidden pt-32 pb-20">
-      <div className="grid-bg pointer-events-none absolute inset-0" aria-hidden />
-      <div
-        className="pointer-events-none absolute -top-40 left-1/2 h-[480px] w-[720px] -translate-x-1/2 rounded-full blur-3xl"
-        style={{ background: "var(--accent-soft)" }}
-        aria-hidden
-      />
-
       <div className="relative mx-auto flex max-w-6xl flex-col items-center px-5 text-center">
         <SideToggle />
 
@@ -55,6 +49,10 @@ export default function Hero() {
               >
                 {t(data.ctaSecondary, lang)}
               </a>
+            </div>
+
+            <div className="mt-10 w-full max-w-2xl [mask-image:linear-gradient(to_bottom,black_75%,transparent)]">
+              <LoreCard />
             </div>
 
             <div className="mt-14 grid w-full max-w-2xl grid-cols-3 gap-4">
