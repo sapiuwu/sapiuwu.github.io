@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { useApp } from "@/components/providers";
-import { NAME, nav, t } from "@/lib/content";
+import { NAME, cv, nav, t } from "@/lib/content";
 
 const links = ["about", "skills", "projects", "experience", "contact"] as const;
 
@@ -46,6 +46,16 @@ export default function Navbar() {
               {t(nav[key], lang)}
             </a>
           ))}
+          <a
+            href={cv.file}
+            download
+            className="ml-2 flex items-center gap-1.5 rounded-lg border border-line bg-bg-card px-3 py-2 text-sm font-medium text-fg-muted transition-colors hover:border-accent hover:text-accent"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
+            </svg>
+            {t(cv.label, lang)}
+          </a>
         </div>
 
         <div className="flex items-center gap-2">
@@ -122,6 +132,17 @@ export default function Navbar() {
                 {t(nav[key], lang)}
               </a>
             ))}
+            <a
+              href={cv.file}
+              download
+              onClick={() => setOpen(false)}
+              className="flex items-center gap-1.5 rounded-lg px-3 py-2.5 text-sm font-medium text-fg-muted transition-colors hover:bg-accent-soft hover:text-accent"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
+              </svg>
+              {t(cv.label, lang)}
+            </a>
           </div>
         </div>
       )}

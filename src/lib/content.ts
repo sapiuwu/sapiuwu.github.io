@@ -2,7 +2,7 @@ import type { Experience, Lang, Localized, Project, SkillGroup, Stat } from "./t
 
 export const t = (text: Localized, lang: Lang) => text[lang];
 
-export const NAME = "Wahyu Pratama";
+export const NAME = "Wahyu Krisna Aji";
 
 export const nav = {
   about: { id: "Tentang", en: "About" },
@@ -10,6 +10,11 @@ export const nav = {
   projects: { id: "Proyek", en: "Projects" },
   experience: { id: "Pengalaman", en: "Experience" },
   contact: { id: "Kontak", en: "Contact" },
+};
+
+export const cv = {
+  file: "/cv.pdf",
+  label: { id: "Unduh CV", en: "Download CV" },
 };
 
 export const sideLabels = {
